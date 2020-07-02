@@ -13,101 +13,148 @@ html {
     padding: 1rem;
 }
 
-#what .items .item{
+#what .items .item {
     display: flex;
     text-align: left;
 
 }
 
-.contact-data-inside ul li{
-    padding: 0rem;
+.contact-data-inside ul li {
+    padding: 2rem 0;
     font-size: 1.75rem;
 }
-.contact-data-inside{
-    padding: 0.5rem;
+
+.contact-data-inside ul li:last-child {
+    padding-bottom: 0;
+}
+
+.contact-data-inside {
+    padding: 2rem;
     font-size: 1.75rem;
 }
 
 /* Position icon */
-#what .items .item i{
+#what .items .item i {
     margin-right: 1.3rem;
     align-self: center;
     margin-bottom: 0em;
 }
-.contact-data-inside{
-    padding-bottom: 2rem;
+
+.contact-data-inside {
+    padding-bottom: 0rem;
 }
 
 /* Smartphones */
-@media(max-width: 500px){
+@media(max-width: 500px) {
     #showcase .showcase-content {
-        height: 63vh;
+        position: absolute;
+        top: 1000px;
+        /*because of navbar*/
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-top: 0rem;
+        top: 68px;
     }
+
     html {
         font-size: 12px;
     }
-    #navbar{
+
+    #navbar {
         padding: 0;
         margin: 0;
         flex-direction: column;
         align-items: center;
     }
 
-    #navbar .logo{
+    #navbar .logo {
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         text-align: center;
     }
+
     #navbar ul {
         padding: 0.2rem;
         font-size: 1.1rem;
         margin: 1rem 0;
     }
 
-    #showcase .showcase-content{
-        margin-top: -5rem;
-        top:130px;
+    .p-1 {
+        padding: 1rem;
     }
 
-    #who{
-        display: block; /*img will not display because it's flex and needs height */
+    .p-2 {
+        padding: 1rem;
     }
-    #who .who-img{
+
+
+    #who {
+        display: block;
+        /*img will not display because it's flex and needs height */
         display: none;
     }
 
-    #clients .items img{
+    #who .who-img {
+        display: none;
+    }
+
+    #clients .items img {
         width: 80%;
     }
 
-    #clients .items div:last-child{
+    #clients .items div:last-child {
         display: none;
     }
 
     #contact {
         display: block;
     }
+
+    .contact-data-inside ul li {
+        font-size: 1.5rem;
+    }
 }
 
-@media(max-width: 1500px){
-    #navbar{
+@media(max-width: 1500px) {
+    #navbar {
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media (max-height: 568px){
+@media (max-width: 320px) {
     html {
         font-size: 12px;
     }
-    #showcase .showcase-content{
-        margin-top: -3rem;
-        top:160px;
+
+    #showcase .showcase-content {
+        margin-top: -5rem;
+        top: 137px;
     }
-    .l-heading{
+
+    .l-heading {
         font-size: 3rem;
     }
-    .lead{
+
+    .lead {
         font-size: 1rem;
+    }
+
+    .contact-data-inside {
+        padding: 0.5rem;
+    }
+
+    .p-1 {
+        padding: 0.5rem;
+    }
+
+    .p-2 {
+        padding: 0.5rem;
+    }
+
+    .contact-data-inside ul li {
+        font-size: 1.5rem;
     }
 }
