@@ -4,7 +4,7 @@ html {
 }
 
 #showcase .showcase-content {
-    height: 64vh;
+    height: 60vh;
 }
 
 
@@ -55,7 +55,7 @@ html {
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.4);
         margin-top: 0rem;
-        top: 68px;
+        top: 100px;
     }
 
     html {
@@ -131,7 +131,7 @@ html {
 
     #showcase .showcase-content {
         margin-top: -5rem;
-        top: 137px;
+        top: 160px;
     }
 
     .l-heading {
