@@ -277,32 +277,22 @@ p {
 }
 
 #what .items .item i {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  text-align: left;
   background: #52a9ff;
-  padding: 1rem;
   border-radius: 50%;
 }
 
-#what .items .item i.fa-plug {
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
-}
-
-#what .items .item i.fa-user-shield {
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-}
-
-#what .items .item i.fa-tablet-alt {
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
-}
-
 #what .items .item h3 {
+  text-align: center;
   color: #006edc;
   font-size: 1.75rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -359,8 +349,19 @@ p {
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 5px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  outline: none;
+  border-color: #006edc;
+  box-shadow: 0 0 0 3px rgba(0, 110, 220, 0.1);
+  background-color: white;
 }
 
 #contact .contact-form textarea {

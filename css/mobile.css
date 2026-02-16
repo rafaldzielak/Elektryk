@@ -1,160 +1,150 @@
 /* Align icon to left */
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #showcase .showcase-content {
-    height: 60vh;
+  height: 60vh;
 }
 
-
 #what .items {
-    display: block;
-    padding: 1rem;
+  display: block;
+  padding: 1rem;
 }
 
 #what .items .item {
-    display: flex;
-    text-align: left;
-
+  display: flex;
+  text-align: left;
 }
 
 .contact-data-inside ul li {
-    padding: 2rem 0;
-    font-size: 1.75rem;
+  padding: 2rem 0;
+  font-size: 1.75rem;
 }
 
 .contact-data-inside ul li:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact-data-inside {
-    padding: 2rem;
-    font-size: 1.75rem;
-}
-
-/* Position icon */
-#what .items .item i {
-    margin-right: 1.3rem;
-    align-self: center;
-    margin-bottom: 0em;
+  padding: 2rem;
+  font-size: 1.75rem;
 }
 
 .contact-data-inside {
-    padding-bottom: 0rem;
+  padding-bottom: 0rem;
 }
 
 /* Smartphones */
-@media(max-width: 500px) {
-    #showcase .showcase-content {
-        position: absolute;
-        top: 1000px;
-        /*because of navbar*/
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        margin-top: 0rem;
-        top: 100px;
-    }
+@media (max-width: 500px) {
+  #showcase .showcase-content {
+    position: absolute;
+    top: 1000px;
+    /*because of navbar*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 0rem;
+    top: 100px;
+  }
 
-    html {
-        font-size: 12px;
-    }
+  html {
+    font-size: 12px;
+  }
 
-    #navbar {
-        padding: 0;
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
-    }
+  #navbar {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #navbar .logo {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-    }
+  #navbar .logo {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 
-    #navbar ul {
-        padding: 0.2rem;
-        font-size: 1.1rem;
-        margin: 1rem 0;
-    }
+  #navbar ul {
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
 
-    .p-1 {
-        padding: 1rem;
-    }
+  .p-1 {
+    padding: 1rem;
+  }
 
-    .p-2 {
-        padding: 1rem;
-    }
+  .p-2 {
+    padding: 1rem;
+  }
 
+  #who {
+    display: block;
+    /*img will not display because it's flex and needs height */
+    display: none;
+  }
 
-    #who {
-        display: block;
-        /*img will not display because it's flex and needs height */
-        display: none;
-    }
+  #who .who-img {
+    display: none;
+  }
 
-    #who .who-img {
-        display: none;
-    }
+  #clients .items img {
+    width: 80%;
+  }
 
-    #clients .items img {
-        width: 80%;
-    }
+  #clients .items div:last-child {
+    display: none;
+  }
 
-    #clients .items div:last-child {
-        display: none;
-    }
+  #contact {
+    display: block;
+  }
 
-    #contact {
-        display: block;
-    }
-
-    .contact-data-inside ul li {
-        font-size: 1.5rem;
-    }
+  .contact-data-inside ul li {
+    font-size: 1.5rem;
+  }
 }
 
-@media(max-width: 1500px) {
-    #navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 1500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 320px) {
-    html {
-        font-size: 12px;
-    }
+  html {
+    font-size: 12px;
+  }
 
-    #showcase .showcase-content {
-        margin-top: -5rem;
-        top: 160px;
-    }
+  #showcase .showcase-content {
+    margin-top: -5rem;
+    top: 160px;
+  }
 
-    .l-heading {
-        font-size: 3rem;
-    }
+  .l-heading {
+    font-size: 3rem;
+  }
 
-    .lead {
-        font-size: 1rem;
-    }
+  .lead {
+    font-size: 1rem;
+  }
 
-    .contact-data-inside {
-        padding: 0.5rem;
-    }
+  .contact-data-inside {
+    padding: 0.5rem;
+  }
 
-    .p-1 {
-        padding: 0.5rem;
-    }
+  .p-1 {
+    padding: 0.5rem;
+  }
 
-    .p-2 {
-        padding: 0.5rem;
-    }
+  .p-2 {
+    padding: 0.5rem;
+  }
 
-    .contact-data-inside ul li {
-        font-size: 1.5rem;
-    }
+  .contact-data-inside ul li {
+    font-size: 1.5rem;
+  }
 }
