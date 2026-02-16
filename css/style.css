@@ -384,6 +384,9 @@ p {
 }
 
 .contact-data-inside ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 2rem 0;
   font-size: 1.5rem;
   line-height: 2rem;
